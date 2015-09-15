@@ -14,7 +14,7 @@ module.exports = function(fis, opts) {
 
             if(file.isHtmlLike && ext.dirname === fis.project.getProjectPath()) {
                 content = file.getContent();
-                file.setContent(content.replace('<script>','<script type="text/javascript">\r\nvar resourceMap = ' + JSON.stringify(ret.map, null, file.optimizer ? null : 4) + '\r\n</script>\r\n' +  '$&'));
+                file.setContent(content.replace('<script','<script type="text/javascript">\r\nvar resourceMap = ' + JSON.stringify(ret.map, null, file.optimizer ? null : 4) + '\r\n</script>\r\n' +  '$&'));
             }
         });
     });

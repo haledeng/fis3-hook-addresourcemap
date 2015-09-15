@@ -1,6 +1,6 @@
 {
   "name": "fis3-hook-addresourcemap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "add resource map into html",
   "main": "index.js",
   "scripts": {
